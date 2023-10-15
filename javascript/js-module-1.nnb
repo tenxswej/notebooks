@@ -388,6 +388,13 @@
         {
             "language": "markdown",
             "source": [
+                "မှတ်ချက်အနေနဲ့ကတော့ Switch statement တွေကိုတော့ variable တွေထဲမှာတိုက်ရိုက် store လို့မရပါဘူး။\r\n\r\nthis will not work\r\n\r\n```js\r\nconst canNotStoreSwitch = switch(true){\r\n    case true:\r\n        return \"some value\"\r\n    default:\r\n        return \"other value\"\r\n}\r\n\r\n```"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
                 "<h3 align=\"center\" style=\"color: blue;\">ကိုယ့် ဥပမာနဲ့ ကိုယ်ပြန်ရေးကြည့်ပါ</h3>"
             ],
             "outputs": []
@@ -609,23 +616,7 @@
             "source": [
                 "const obj = { a: 1, b: 2, c: 3, d: 4 };\r\n\r\n\r\nfor (const key in obj) {\r\n    console.log(key);\r\n}"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "a",
-                                "b",
-                                "c",
-                                "d",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -792,7 +783,7 @@
         {
             "language": "markdown",
             "source": [
-                "# String Methods\r\n\r\n- [strings details](#deep-dive-into-strings)\r\n- startsWith\r\n- endsWith\r\n- localCompare\r\n- [split](#split)\r\n- [slice](#slice)\r\n- [replace](#replace)\r\n- [toLowerCase & toUpperCase](#lowercase--uppercase)\r\n- [concat](#stringconcat)\r\n- [match](#match)\r\n- [matchAll](#matchall)\r\n- Regex\r\n- [trim](#trim)\r\n- [includes](#includes)\r\n- [charAt](#charat)\r\n- charCodeAt\r\n- fromCharCode\r\n- [indexOf](#stringindeof)\r\n- optional chaining"
+                "# String Methods\r\n\r\n- [strings details](#deep-dive-into-strings)\r\n- [startsWith](#startswith)\r\n- [endsWith](#endswith)\r\n- [localCompare](#localcompare)\r\n- [split](#split)\r\n- [slice](#slice)\r\n- [replace](#replace)\r\n- [toLowerCase & toUpperCase](#lowercase--uppercase)\r\n- [concat](#stringconcat)\r\n- [match](#match)\r\n- [matchAll](#matchall)\r\n- Regex\r\n- [trim](#trim)\r\n- [includes](#includes)\r\n- [charAt](#charat)\r\n- charCodeAt\r\n- fromCharCode\r\n- [indexOf](#stringindeof)\r\n- optional chaining"
             ],
             "outputs": []
         },
@@ -938,44 +929,16 @@
         {
             "language": "javascript",
             "source": [
-                "const string = \"a\";\r\nconst string2 = \"b\";\r\n\r\nconsole.log(string.localeCompare(string2));\r\nconsole.log(string2.localeCompare(string));"
+                "const string = \"a\";\r\nconst string2 = \"b\";\r\n\r\nconsole.log(string.localeCompare(string2)); // -1\r\nconsole.log(string2.localeCompare(string)); // 1"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "-1",
-                                "1",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "const string = \"apple\";\r\nconst string2 = \"apron\";\r\n\r\nconsole.log(string.localeCompare(string2));\r\nconsole.log(string2.localeCompare(string));"
+                "const string = \"apple\";\r\nconst string2 = \"apron\";\r\n\r\nconsole.log(string.localeCompare(string2)); // -1\r\nconsole.log(string2.localeCompare(string)); //1"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "-1",
-                                "1",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -1280,42 +1243,7 @@
             "source": [
                 "const tweet = \"Check out my #JavaScript code! #Coding #Programming\";\r\nconst hashtagRegex = /#(\\w+)/g;\r\nconst hashtagMatch = tweet.matchAll(hashtagRegex);\r\n\r\nconsole.log([...hashtagMatch]);"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "[",
-                                "  [",
-                                "    '#JavaScript',",
-                                "    'JavaScript',",
-                                "    index: 13,",
-                                "    input: 'Check out my #JavaScript code! #Coding #Programming',",
-                                "    groups: undefined",
-                                "  ],",
-                                "  [",
-                                "    '#Coding',",
-                                "    'Coding',",
-                                "    index: 31,",
-                                "    input: 'Check out my #JavaScript code! #Coding #Programming',",
-                                "    groups: undefined",
-                                "  ],",
-                                "  [",
-                                "    '#Programming',",
-                                "    'Programming',",
-                                "    index: 39,",
-                                "    input: 'Check out my #JavaScript code! #Coding #Programming',",
-                                "    groups: undefined",
-                                "  ]",
-                                "]",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
         },
         {
             "language": "markdown",
@@ -2305,7 +2233,7 @@
         {
             "language": "markdown",
             "source": [
-                "# indexOf\r\n\r\narray တစ်ခုထဲမှာ callback ထဲက ပေးထားတဲ့ condition နဲ့ကိုက်ညီတဲ့ element တစ်ခုပါလားဆိုတာကို စစ်ပေးတာ၊\r\n- ပါရင် အဲဒီ element ရဲ့ index ကို return ပြန်ပေးတယ်၊ မပါရင် - 1 return ပြန်ပေးတယ်။\r\n- includes မှာလိုမျိုးပဲ စရှာစေချင်တဲ့ startIndex ပေးလို့ရတယ်။ အလုပ်လုပ်ပုံ အတူတူပဲဖြစ်ပါတယ်။\r\n- empty slot တွေကိုတော့ရှာလို့မရပါဘူး အဲဒီအတွက်ဆို includes ကိုပဲသုံးပါ\r\n\r\nအသုံးဝင်ပုံကတော့ element တစ်ခုကအဲဒီ array ထဲမှာ ရှိမရှိဆိုတာ သိချင်ရုံပဲ, အဲဒီ element ကို return ပြန်ထွက်လာစေချင်တာမျိုးမဟုတ်တဲ့အခြေအနေမျိုးမှာ အဆင်ပြေတယ်\r\n\r\ncondition statement နဲ့သုံးရင် return value က 0 ထက်ကြီးလား၊ငယ်လားနဲ့ စစ်လို့ရတယ်\r\n\r\n\r\n#### syntax\r\n\r\n```js\r\narray.indexOf(element, startIndex)\r\n```\r\n\r\n#### example\r\n\r\n```js\r\n\r\nconst findIndex = someArray.findIndex(\"some value\")\r\n\r\nif(findIndex > 0){\r\n    // \r\n}else{\r\n    // \r\n}\r\n\r\n```"
+                "# indexOf\r\n\r\narray တစ်ခုထဲမှာ callback ထဲက ပေးထားတဲ့ condition နဲ့ကိုက်ညီတဲ့ element တစ်ခုပါလားဆိုတာကို စစ်ပေးတာ၊\r\n- ပါရင် အဲဒီ element ရဲ့ index ကို return ပြန်ပေးတယ်၊ မပါရင် - 1 return ပြန်ပေးတယ်။\r\n- includes မှာလိုမျိုးပဲ စရှာစေချင်တဲ့ startIndex ပေးလို့ရတယ်။ အလုပ်လုပ်ပုံ အတူတူပဲဖြစ်ပါတယ်။\r\n- empty slot တွေကိုတော့ရှာလို့မရပါဘူး အဲဒီအတွက်ဆို includes ကိုပဲသုံးပါ\r\n\r\nအသုံးဝင်ပုံကတော့ element တစ်ခုကအဲဒီ array ထဲမှာ ရှိမရှိဆိုတာ သိချင်ရုံပဲ, အဲဒီ element ကို return ပြန်ထွက်လာစေချင်တာမျိုးမဟုတ်တဲ့အခြေအနေမျိုးမှာ အဆင်ပြေတယ်\r\n\r\ncondition statement နဲ့သုံးရင် return value က 0 ထက်ကြီးလား၊ငယ်လားနဲ့ စစ်လို့ရတယ်\r\n\r\n\r\n#### syntax\r\n\r\n```js\r\narray.indexOf(element, startIndex)\r\n```\r\n\r\n#### example\r\n\r\n```js\r\n\r\nconst findIndex = someArray.indexOf(\"some value\")\r\n\r\nif(findIndex > 0){\r\n    // \r\n}else{\r\n    // \r\n}\r\n\r\n```"
             ],
             "outputs": []
         },
@@ -2314,22 +2242,28 @@
             "source": [
                 "const array = [\"apple\", \"banana\", \"car\", \"dog\", \"ear\"]\r\nconst arrayWithSomeEmptySlots = [\"fish\", , \"horse\",, \"joker\"]\r\n\r\nconst isIncludesFrom0 = array.indexOf(\"car\")\r\nconst isIncludesFrom4 = array.indexOf(\"car\", 4)\r\nconst isIncludesFromLast = array.indexOf(\"car\", -1)\r\nconst isEmptySlot = arrayWithSomeEmptySlots.indexOf(undefined)\r\n\r\nconst isIncludes = array.indexOf(\"fish\")\r\n\r\nconsole.log(isIncludesFrom0)\r\nconsole.log(isIncludesFrom4)\r\nconsole.log(isIncludesFromLast)\r\nconsole.log(isIncludes)\r\nconsole.log(isEmptySlot)"
             ],
-            "outputs": [
-                {
-                    "items": [
-                        {
-                            "mime": "application/vnd.code.notebook.stdout",
-                            "value": [
-                                "2",
-                                "-1",
-                                "-1",
-                                "",
-                                ""
-                            ]
-                        }
-                    ]
-                }
-            ]
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "indexOf နဲ့ array of objects တွေမှာဘယ်လိုဝင်ရှာမလဲ\r\n\r\nပုံမှန် အတိုင်းဆိုရင်တော့ indexOf ကိုသုံးပြီး array of objects ထဲ value တွေကို key နဲ့ဝင်ရှာလို့မရပါဘူး။\r\nသူက **standalone** ကိုပဲလက်ခံတာဖြစ်တာကြောင့် indexOf ကိုသုံးပြီး array of objects တွေထဲမှာ ကိုယ်ရှာချင်တဲ့ဟာရှိလားဆိုတာရှာဖို့ အတွက် standalone value တွေဖြစ်အောင်အရင်ပြောင်းပြီးမှ **method chaining** ကိုအသုံးပြုပြီးရှာလို့ရပါတယ်။\r\n\r\nဆိုတော့ standalone တွေရအောင်ပြောင်းဖို့ဆိုရင် new array တစ်ခု ပြန်ပေးတဲ့ method တစ်ခုသုံးရပါမယ်။ သူကတော့ **map** ပါ။ map ကနေကိုယ်ရှာချင်တဲ့ key ရဲ့ value တွေကိုဆွဲထုတ်လာမယ်။ ပြီးရင် **method chaining** သုံးပြီး **indexOf** နဲ့ကပ်ပေးလိုက်မယ်၊ ဒါဆိုရပါပြီ။"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "// ဒီလိုလုပ်လို့မရပါဘူး\r\n\r\nconst arrayOfObjects = [\r\n    { name: \"James\", age: 88 },\r\n    { name: \"Emily\", age: 91 },\r\n    { name: \"George\", age: 89 },\r\n    { name: \"Harry\", age: 40 },\r\n ];\r\n \r\n console.log(arrayOfObjects.indexOf({ name: \"Emily\" })); // -1\r\n "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "// ဒီလိုလုပ်ရပါမယ်\r\n\r\nconst arrayOfObjects = [\r\n    { name: \"James\", age: 88 },\r\n    { name: \"Emily\", age: 91 },\r\n    { name: \"George\", age: 89 },\r\n    { name: \"Harry\", age: 40 },\r\n ];\r\n \r\n console.log(arrayOfObjects.map((person) => person.name).indexOf(\"Emily\")); // 1 "
+            ],
+            "outputs": []
         },
         {
             "language": "markdown",
