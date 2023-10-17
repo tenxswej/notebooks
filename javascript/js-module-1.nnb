@@ -388,6 +388,20 @@
         {
             "language": "markdown",
             "source": [
+                "Browser ထဲမှာရေးရင်တော့သူ့ရဲ့ javascript version ကြောင့် function အပြင်မှာ return keyword ကိုသုံးလို့မရတာကြောင့်သူ့အစား break keyword ကိုသုံးရပါမယ်"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const score = 30;\r\n\r\nswitch (true) {\r\n   case score >= 80:\r\n      console.log(\"A+\");\r\n      break\r\n   case score >= 60:\r\n      console.log(\"B+\");\r\n      break\r\n   case score >= 40:\r\n      console.log(\"B\");\r\n      break\r\n   case score >= 20:\r\n      console.log(\"F\");\r\n      break\r\n   default:\r\n      return console.log(\"You are expelled!!\");\r\n}\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
                 "မှတ်ချက်အနေနဲ့ကတော့ Switch statement တွေကိုတော့ variable တွေထဲမှာတိုက်ရိုက် store လို့မရပါဘူး။\r\n\r\nthis will not work\r\n\r\n```js\r\nconst canNotStoreSwitch = switch(true){\r\n    case true:\r\n        return \"some value\"\r\n    default:\r\n        return \"other value\"\r\n}\r\n\r\n```"
             ],
             "outputs": []
@@ -572,7 +586,21 @@
         {
             "language": "markdown",
             "source": [
-                "### break the loop conditionally\r\n\r\n- iterable object(array) တစ်ခုမှာ condition  တစ်ခုရောက်ရင် ရပ်လိုက်ချင်တဲ့ အခြေအနေတွေ ရှိချင်ရှိနိုင်ပါတယ်၊\r\n- **break** ဆိုတဲ့ keyword နဲ့ loop ရဲ့ iteration တစ်ခုကို conditionally ရပ် လို့ရပါတယ်။"
+                "### break the loop conditionally\r\n\r\n- loop ပတ်နေရင်း break point condition  ကိုမရောက်သေးပေမယ့်၊ အခြေအနေတစ်ခုမှာပဲ ရပ်လိုက်ချင်တဲ့ ဆိုရင်\r\n- **break** ဆိုတဲ့ keyword နဲ့ loop ရဲ့ iteration တစ်ခုကို conditionally ရပ် လို့ရပါတယ်။"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const myPersonal = [\"I appear in the console\", \"me too\", \"I am stopped here\", \"I am not supposed to appear in console\", \"me neither\"]\r\nfor (let index = 0; index < myPersonal.length; index++) {\r\n\r\n    if(index === 2) break\r\n\r\n    console.log(myPersonal[index]);\r\n    \r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### skipping the loop\r\n\r\n- looping ပတ်နေရင်းနဲ့ condition  တစ်ခုရောက်ရင် ကျော်လိုက်ပြီး နောက် loop တစ်ခုရောက်သွားစေချင်တဲ့ အခြေအနေတွေမှာ\r\n- **continue** ဆိုတဲ့ keyword နဲ့ loop ရဲ့ iteration တစ်ခုကို conditionally ကျော်သွား လို့ရပါတယ်။\r\n\r\nအောက်က ဥပမာမှာ \"crush\" ဆိုတဲ့ string လေးကို console မှာမပေါ်စေချင်လို့ ကျော်သွားလိုက်တဲ့သဘောကို ဥပမာအနေနဲ့ပြထားပါတယ်"
             ],
             "outputs": []
         },
@@ -586,7 +614,7 @@
         {
             "language": "markdown",
             "source": [
-                "### nested loops\r\n\r\nloop တစ်ခုထဲမှာက တစ်ခုထက်ပိုတဲ့ တခြား nested loop တွေ ထည့်လို့ရပါသေးတယ်။ ကိုယ်လိုရာ အကြောင်းအရာပေါ်မူတည်ပြီး အသုံးပြုနိုင်ပါတယ်။"
+                "### nested loops\r\n\r\nloop တစ်ခုထဲမှာက တစ်ခုထက်ပိုတဲ့ တခြား nested loop တွေ ထည့်လို့ရပါသေးတယ်။ ကိုယ်လိုရာ အကြောင်းအရာပေါ်မူတည်ပြီး အသုံးပြုနိုင်ပါတယ်။\r\n\r\nnested loop ရဲ့ အလုပ်လုပ်ပုံက ပထမ loop ကနေ တစ်ခေါက်ပတ်တယ်၊ သူ့ရဲ့ အတွင်း loop ကို အပြည့်ပတ်တယ် (အဲဒါက နောက်ဆုံးloop ဖြစ်ပြီး၊ သူ့ထဲမှာ အခြားnested loop တွေထပ်မရှိတော့ဘူးဆိုရင်)၊ သူ loop တစ်ပတ်ပြီးသွားရင် ၊ အပေါ်ကိုတစ်တိုးတယ်၊ ပြန်ရောက်လာတယ် နောက်တစ်loop ထပ်တယ် အဲလိုမျိုးကို အပေါ်က loop မကုန်မချင်း အောက်က loop ကို ပတ်သွားတာပါ၊ ပတ်တိုင်းလဲ အပြည့်ပတ်တာဖြစ်ပြီး သူပြည့်သွားမှဦအ‌ပေါ်ကို တစ်တိုး အပေါ် loopမပြီးမချင်းကို ပြီးထပ်ပတ်တာပါ။"
             ],
             "outputs": []
         },
@@ -1628,7 +1656,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Array methods\r\n\r\n> Array methods တွေက arrays တွေမှာပဲ အလုပ်လုပ်ပါတယ်၊ အများသော method တွေရဲ့ paramter ထဲမှာ callback function အမြဲထည့်ပေးရပါတယ်၊ callback function တွေကို 90% သောအကြိမ်တိုင်းမှာ clean code ဖြစ်ဖို့ arrow functions တွေကိုပဲအသုံးများကြပါတယ်။ callback မလိုပဲ value ပဲလိုတဲ့ဟာတွေလဲရှိပါတယ်, ဘာ argument မှမလိုတာလဲရှိပါတယ်။ တချို့က boolean statement တွေ ပဲထည့်ပေးရပါတယ်။ တချို့ကတော့ အထဲမှာ run မယ့် task တွေထည့်လို့ရပါတယ်။ array return ပြန်ပေးတဲ့ method တွေထဲမှာ new copied array return တာရယ် original array ကိုသွားပြောင်းတာရယ် ၂ မျိုးရှိပါတယ်။ new copy array ဆိုတာ အမြဲ **shallow copy** ပဲဖြစ်ပါတယ်။ deep copy မရနိုင်ပါ။ shallow copy, deep copy အ‌ကြောင်းကို ရှင်းပြပေးထားပါတယ်။\r\n\r\n-  [push](#push)\r\n-  [pop](#pop)\r\n-  [shift](#shift)\r\n-  [unshift](#unshift)\r\n-  [foreach](#foreach)\r\n-  [map](#map)\r\n-  [find](#find)\r\n-  [findIndex](#findindex)\r\n-  [indexOf](#indexOf)\r\n-  [filter](#filter)\r\n-  [sort](#sort)\r\n-  [slice](#slice)\r\n-  [splice](#splice)\r\n-  [reverse](#reverse)\r\n-  [indexof](#indexof)\r\n-  [some](#some)\r\n-  [every](#every)\r\n-  [join](#join)\r\n-  [concat](#concat)\r\n-  [flat](#flat)\r\n-  [reduce](#includes)\r\n-  [includes](#includes)\r\n- [challenges](#challenges)"
+                "# Array methods\r\n\r\n> Array methods တွေက arrays တွေမှာပဲ အလုပ်လုပ်ပါတယ်၊ အများသော method တွေရဲ့ paramter ထဲမှာ callback function အမြဲထည့်ပေးရပါတယ်၊ callback function တွေကို 90% သောအကြိမ်တိုင်းမှာ clean code ဖြစ်ဖို့ arrow functions တွေကိုပဲအသုံးများကြပါတယ်။ callback မလိုပဲ value ပဲလိုတဲ့ဟာတွေလဲရှိပါတယ်, ဘာ argument မှမလိုတာလဲရှိပါတယ်။ တချို့က boolean statement တွေ ပဲထည့်ပေးရပါတယ်။ တချို့ကတော့ အထဲမှာ run မယ့် task တွေထည့်လို့ရပါတယ်။ array return ပြန်ပေးတဲ့ method တွေထဲမှာ new copied array return တာရယ် original array ကိုသွားပြောင်းတာရယ် ၂ မျိုးရှိပါတယ်။ new copy array ဆိုတာ အမြဲ **shallow copy** ပဲဖြစ်ပါတယ်။ deep copy မရနိုင်ပါ။ shallow copy, deep copy အ‌ကြောင်းကို ရှင်းပြပေးထားပါတယ်။\r\n\r\n-  [push](#push)\r\n-  [pop](#pop)\r\n-  [shift](#shift)\r\n-  [unshift](#unshift)\r\n-  [foreach](#foreach)\r\n-  [map](#map)\r\n-  [find](#find)\r\n-  [findIndex](#findindex)\r\n-  [indexOf](#indexOf)\r\n-  lastIndexOf\r\n-  [filter](#filter)\r\n-  [sort](#sort)\r\n-  [slice](#slice)\r\n-  [splice](#splice)\r\n-  [reverse](#reverse)\r\n-  [indexof](#indexof)\r\n-  [some](#some)\r\n-  [every](#every)\r\n-  [join](#join)\r\n-  [concat](#concat)\r\n-  [flat](#flat)\r\n-  [reduce](#includes)\r\n-  [includes](#includes)\r\n- [challenges](#challenges)"
             ],
             "outputs": []
         },
