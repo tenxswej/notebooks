@@ -1,0 +1,335 @@
+<mxfile host="65bd71144e">
+    <diagram id="TA0ZKF6RBeeegdJgYU5x" name="Page-1">
+        <mxGraphModel dx="1787" dy="1337" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#4D4D4D" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="2" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="HTML/CSS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF0000;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="70" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#0000FF;" parent="1" source="4" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="No" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="37.5" y="190" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="8" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Yes" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="190" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="2" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="413.6363636363635" y="160" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="" style="edgeStyle=none;html=1;fontColor=#0000FF;" parent="1" source="11" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="edgeStyle=none;html=1;fontColor=#0000FF;" parent="1" source="11" target="18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- build at least 2 projects own your own&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 230%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- complete &lt;b&gt;&lt;font color=&quot;#0000ff&quot;&gt;10X&lt;/font&gt;&lt;/b&gt; challenges&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="282.5" y="330" width="235" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="edgeStyle=none;html=1;fontSize=18;" parent="1" source="14" target="35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;- Senmatic HTML tags&lt;br&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Box models&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Css units&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- types of elements&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;- block, inline, inline-block&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;- flex, inline-flex&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- fonts,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;images&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- flex&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- grid&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- variables&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- functions&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- pseudo classes&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- pseudo elements&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- transitions&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- keyframes&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- media queries&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;- light mode, dark mode&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;- responsize layouts&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 27.6px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- projects&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="-40" y="330" width="235" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#0000FF;fontSize=19;strokeColor=#FFFF66;" parent="1" source="16" target="26" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="580" y="480"/>
+                            <mxPoint x="580" y="110"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="ok" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="440" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#0000FF;" parent="1" source="18" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="find your weakness" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#0000FF;rounded=1;" parent="21" vertex="1" connectable="0">
+                    <mxGeometry x="-0.205" relative="1" as="geometry">
+                        <mxPoint x="13" y="26" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="not ok" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="440" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="26" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="JavaScript" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF0000;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="70" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=15;fontColor=#0000CC;" parent="1" source="27" target="81" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="No" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="180" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;" parent="1" source="28" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Yes" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1020" y="180" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="26" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1006.1363636363635" y="160" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="" style="html=1;fontSize=16;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="33" target="46" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="33" target="48" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 140%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Module - 1&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;coding challenges&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="960.63" y="330" width="198.75" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=21;" parent="1" source="35" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="ok" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;fontSize=21;" parent="1" vertex="1">
+                    <mxGeometry x="37.5" y="1000" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=16;" parent="1" source="39" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="780" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 140%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Module - 1&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Data types&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Operators&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Functions&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Condition statements&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Arrays&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Objects&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Loops&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Built-in Utily objects&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- String methods&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Array methods&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="676.25" y="380" width="207.5" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="42" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;font color=&quot;#33ff33&quot;&gt;&lt;b&gt;OK&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;fontSize=21;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="690" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="43" target="54" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 140%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Module - 2&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Currying&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Event Loop (Browser engine)&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Recursion&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Closure&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Prototypal inheritance&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Objects constructors&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Scope &amp;amp; this keyword&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="662.5" y="890" width="235" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=15;fontColor=#0000CC;" parent="1" source="46" target="78" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1140" y="850"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="&lt;b&gt;&lt;font color=&quot;#33ff33&quot; style=&quot;font-size: 21px;&quot;&gt;OK&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
+                    <mxGeometry x="1110" y="550" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.366;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=21;fontColor=#CC0000;" parent="1" source="48" target="39" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="930" y="590"/>
+                            <mxPoint x="930" y="479"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="&lt;font color=&quot;#0000cc&quot;&gt;try again&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=#FFFFFF;rounded=1;" parent="52" vertex="1" connectable="0">
+                    <mxGeometry x="-0.38" y="1" relative="1" as="geometry">
+                        <mxPoint x="-3" y="-31" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#cc0000&quot;&gt;NO&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
+                    <mxGeometry x="953.75" y="550" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="54" target="56" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="&lt;font color=&quot;#33ff33&quot;&gt;&lt;b&gt;OK&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;fontSize=21;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="1220" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" style="html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="56" target="62" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" style="edgeStyle=none;html=1;entryX=0.422;entryY=-0.041;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=21;fontColor=#33FF33;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="56" target="59" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 140%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Module - 2&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;coding challenges&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="1051.5600000000002" y="960" width="196.87" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=15;fontColor=#0000CC;" parent="1" source="59" target="80" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1250" y="1390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="&lt;b&gt;&lt;font color=&quot;#33ff33&quot; style=&quot;font-size: 21px;&quot;&gt;OK&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
+                    <mxGeometry x="1210" y="1150" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="62" target="43" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="try again" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=#0000CC;rounded=1;" parent="66" vertex="1" connectable="0">
+                    <mxGeometry x="0.0721" y="-3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="62" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#cc0000&quot;&gt;NO&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="1150" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="68" target="70" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 140%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Module - 3&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Promises&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- thenables callback&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Error handling&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- async await&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- using fetch&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- REST api&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="662.5" y="1440" width="237.5" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="70" target="73" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="780" y="1880"/>
+                            <mxPoint x="1161" y="1880"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" value="&lt;font color=&quot;#33ff33&quot;&gt;&lt;b&gt;OK&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;fontSize=21;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="1760" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" style="html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="73" target="76" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" style="edgeStyle=none;html=1;entryX=0.422;entryY=-0.041;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=21;fontColor=#33FF33;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="73" target="74" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 140%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Module - 3&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;coding challenges&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="1043.75" y="1520" width="235" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#FFFF66;fontSize=19;fontColor=#0000CC;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="74" target="90" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1490" y="109.99999999999977" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1410" y="1740"/>
+                            <mxPoint x="1410" y="90"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="74" value="&lt;b&gt;&lt;font color=&quot;#33ff33&quot; style=&quot;font-size: 21px;&quot;&gt;OK&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
+                    <mxGeometry x="1233.75" y="1700" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="76" target="68" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="try again" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=#0000CC;rounded=1;" parent="75" vertex="1" connectable="0">
+                    <mxGeometry x="0.2187" relative="1" as="geometry">
+                        <mxPoint x="-2" y="21" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="76" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#cc0000&quot;&gt;NO&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
+                    <mxGeometry x="1033.75" y="1700" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="Functional Programming" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=15;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" parent="1" vertex="1">
+                    <mxGeometry x="685" y="820" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="Asynchronous" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=21;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" parent="1" vertex="1">
+                    <mxGeometry x="685" y="1360" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Practical JS&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=21;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" parent="1" vertex="1">
+                    <mxGeometry x="692.5" y="320" width="175" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="90" target="93" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="90" target="92" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="DOM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF0000;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="1697.5" y="50" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" style="edgeStyle=none;html=1;" parent="1" source="92" target="94" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="Yes" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1900" y="190" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="93" target="95" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="No" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="1553.75" y="190" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=35;fontColor=#0000CC;strokeColor=#FFFF66;" parent="1" source="94" target="111" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="&lt;p style=&quot;line-height: 130%;&quot;&gt;&lt;/p&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 190%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 190%;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Vanilla JS Projects&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- CRUD app&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- HTML code editor&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Form validator&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- User Table w/ backend api&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Shopping app w/ backend api&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;- Media Recorder&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 120%;&quot;&gt;(screencast, audio, video)&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 210%;&quot;&gt;- &lt;font color=&quot;#b3b3b3&quot;&gt;will add more projects&lt;/font&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="1821.25" y="337.5" width="237.5" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Practical&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=21;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" parent="1" vertex="1">
+                    <mxGeometry x="1506.25" y="320" width="175" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#B3B3B3;" parent="1" source="97" target="100" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="&lt;p style=&quot;line-height: 180%;&quot;&gt;- HTML Tree&lt;br&gt;- DOM methods&lt;br&gt;- Elements CRUD&lt;br&gt;- DOM traversing&lt;br&gt;- DOM traversing&lt;br&gt;- events, event listeners&lt;br&gt;- event propergation&lt;br&gt;- event delegation&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1480.32" y="380" width="226.87" height="245" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Important web apis&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=21;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" parent="1" vertex="1">
+                    <mxGeometry x="1506.25" y="705" width="175" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#B3B3B3;" parent="1" source="101" target="94" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="&lt;p style=&quot;line-height: 180%;&quot;&gt;- Navigator&lt;br&gt;- Form data, File object&lt;br&gt;- Blob, array buffer&lt;br&gt;- Data url&lt;br&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1483.9099999999999" y="765" width="219.69" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="Tailwind Css" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF0000;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="2220" y="50" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="Typescript" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF0000;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="2420" y="50" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=35;fontColor=#0000CC;" parent="1" source="111" target="114" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#B3B3B3;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="2200" y="-10" width="400" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="&lt;font color=&quot;#0000cc&quot; style=&quot;font-size: 35px;&quot;&gt;&lt;b&gt;Crash Intro&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fontColor=#B3B3B3;" parent="1" vertex="1">
+                    <mxGeometry x="2300" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="114" target="119" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="React (Frontend Only)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF0000;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="2320" y="250" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="&lt;p style=&quot;line-height: 130%;&quot;&gt;&lt;/p&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 190%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 190%;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;React Projects [PART-1]&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Quizz app&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Hangman&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Form validator migration&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Shopping app migration&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;- Media Recorder migration&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 210%;&quot;&gt;- Table search migration&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="2255.01" y="1008" width="290" height="242" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="118" target="122" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="&lt;p style=&quot;line-height: 180%;&quot;&gt;- React Introduction&lt;br&gt;- states, props&lt;br&gt;- build tool (vite js)&lt;br&gt;- fundamental hooks&lt;br&gt;- small projects&lt;br&gt;- typescript, tailwind css&amp;nbsp;&lt;br&gt;- reducer hook&lt;br&gt;- context api&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="2286.57" y="470" width="226.87" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;starter&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=21;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" parent="1" vertex="1">
+                    <mxGeometry x="2312.5" y="420" width="175" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="121" target="117">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="&lt;p style=&quot;line-height: 180%;&quot;&gt;- Easy Custom hooks&lt;br&gt;- React router&lt;br&gt;- redux js&lt;br&gt;- redux tool kit&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="2286.57" y="810" width="226.87" height="139" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Module 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=21;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" parent="1" vertex="1">
+                    <mxGeometry x="2312.5" y="760" width="175" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

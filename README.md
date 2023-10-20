@@ -42,3 +42,8 @@
  <span style="color:blue; font-weight:bold"> 10X | SWEJ</span> ရဲ့ project တွေ၊ discussion တွေပါဝင်ရောက်ပြီး လုပ်ကိုင်ပြီး လက်ရှိ လေ့လာထားတဲ့ skill တွေကို လက်တွေ့အသုံးချ နိုင်ပါတယ်။
 
 လစဥ်လဲ screen casts course တွေအမြဲတင်ပေးနေတာကြောင့် ဒီလောက်နဲ့ ရပ်မနေပဲ အမြဲ တိုးတက်နေအောင် discord server မှာဆက်လေ့လာနေနိုင်ပါတယ်။
+
+
+## Road map
+
+<img src="./road_map//ROADMAP.png"/>
