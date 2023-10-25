@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="TA0ZKF6RBeeegdJgYU5x" name="Page-1">
-        <mxGraphModel dx="1787" dy="1337" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#4D4D4D" math="0" shadow="0">
+        <mxGraphModel dx="1967" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="#4D4D4D" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -132,12 +132,14 @@
                 <mxCell id="46" value="&lt;b&gt;&lt;font color=&quot;#33ff33&quot; style=&quot;font-size: 21px;&quot;&gt;OK&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
                     <mxGeometry x="1110" y="550" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.366;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=21;fontColor=#CC0000;" parent="1" source="48" target="39" edge="1">
+                <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.366;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=21;fontColor=#CC0000;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="930" y="590"/>
-                            <mxPoint x="930" y="479"/>
+                            <mxPoint x="932" y="590"/>
+                            <mxPoint x="932" y="479"/>
                         </Array>
+                        <mxPoint x="955.7500432526185" y="589.9411764705881" as="sourcePoint"/>
+                        <mxPoint x="885.75" y="478.81999999999994" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="82" value="&lt;font color=&quot;#0000cc&quot;&gt;try again&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=#FFFFFF;rounded=1;" parent="52" vertex="1" connectable="0">
@@ -184,12 +186,6 @@
                 <mxCell id="62" value="&lt;span style=&quot;font-size: 21px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#cc0000&quot;&gt;NO&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
                     <mxGeometry x="1010" y="1150" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="67" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="68" target="70" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="68" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 140%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Module - 3&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Promises&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- thenables callback&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Error handling&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- async await&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- using fetch&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- REST api&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
-                    <mxGeometry x="662.5" y="1440" width="237.5" height="200" as="geometry"/>
-                </mxCell>
                 <mxCell id="69" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="70" target="73" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
@@ -222,8 +218,10 @@
                 <mxCell id="74" value="&lt;b&gt;&lt;font color=&quot;#33ff33&quot; style=&quot;font-size: 21px;&quot;&gt;OK&lt;/font&gt;&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;rounded=1;spacingTop=0;spacing=12;" parent="1" vertex="1">
                     <mxGeometry x="1233.75" y="1700" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="75" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="76" target="68" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="75" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=21;fontColor=#33FF33;" parent="1" source="76" target="128" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="900" y="1540" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="85" value="try again" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;fontColor=#0000CC;rounded=1;" parent="75" vertex="1" connectable="0">
                     <mxGeometry x="0.2187" relative="1" as="geometry">
@@ -299,8 +297,8 @@
                 <mxCell id="111" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontColor=#B3B3B3;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="2200" y="-10" width="400" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="113" value="&lt;font color=&quot;#0000cc&quot; style=&quot;font-size: 35px;&quot;&gt;&lt;b&gt;Crash Intro&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fontColor=#B3B3B3;" parent="1" vertex="1">
-                    <mxGeometry x="2300" width="200" height="30" as="geometry"/>
+                <mxCell id="113" value="&lt;font color=&quot;#0000cc&quot; style=&quot;font-size: 35px;&quot;&gt;&lt;b&gt;Crash Course&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;labelBackgroundColor=none;fontColor=#B3B3B3;" parent="1" vertex="1">
+                    <mxGeometry x="2275" width="250" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="120" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="114" target="119" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -315,19 +313,52 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="118" value="&lt;p style=&quot;line-height: 180%;&quot;&gt;- React Introduction&lt;br&gt;- states, props&lt;br&gt;- build tool (vite js)&lt;br&gt;- fundamental hooks&lt;br&gt;- small projects&lt;br&gt;- typescript, tailwind css&amp;nbsp;&lt;br&gt;- reducer hook&lt;br&gt;- context api&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
-                    <mxGeometry x="2286.57" y="470" width="226.87" height="220" as="geometry"/>
+                    <mxGeometry x="2286.57" y="485" width="226.87" height="220" as="geometry"/>
                 </mxCell>
                 <mxCell id="119" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;starter&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=21;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" parent="1" vertex="1">
                     <mxGeometry x="2312.5" y="420" width="175" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="124" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="121" target="117">
+                <mxCell id="124" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="121" target="117" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="121" value="&lt;p style=&quot;line-height: 180%;&quot;&gt;- Easy Custom hooks&lt;br&gt;- React router&lt;br&gt;- redux js&lt;br&gt;- redux tool kit&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" parent="1" vertex="1">
-                    <mxGeometry x="2286.57" y="810" width="226.87" height="139" as="geometry"/>
+                    <mxGeometry x="2286.5800000000004" y="821" width="226.87" height="139" as="geometry"/>
                 </mxCell>
                 <mxCell id="122" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Module 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=21;fontColor=#ffffff;fillColor=#e51400;strokeColor=#B20000;" parent="1" vertex="1">
                     <mxGeometry x="2312.5" y="760" width="175" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" value="Frontend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=182;" parent="1" vertex="1">
+                    <mxGeometry x="947.5" y="-240" width="750" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="126" target="131">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="126" target="132">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="Node JS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF0000;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="3420" y="50" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="Fullstack" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontSize=182;" parent="1" vertex="1">
+                    <mxGeometry x="3110" y="-240" width="750" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="129" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="128" target="70">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="128" value="&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 140%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Module - 1&lt;/font&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Asynchronous natures&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- non-blocking vs async&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Promises&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- thenable callbacks&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- async await&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- error handling&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- race, parallel, sequence&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- async iterations&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- Request object&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 170%;&quot;&gt;- handling responses&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="676.25" y="1425" width="223.75" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="&lt;p style=&quot;line-height: 130%;&quot;&gt;&lt;/p&gt;&lt;blockquote style=&quot;margin: 0px 0px 0px 40px; border: none; padding: 0px; line-height: 190%;&quot;&gt;&lt;div style=&quot;text-align: center; line-height: 190%;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Vanilla JS Projects&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div style=&quot;text-align: center; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- CRUD app&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- HTML code editor&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Form validator&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- User Table w/ backend api&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- Shopping app w/ backend api&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 190%;&quot;&gt;- Media Recorder&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 120%;&quot;&gt;(screencast, audio, video)&lt;/div&gt;&lt;div style=&quot;text-align: justify; line-height: 210%;&quot;&gt;- &lt;font color=&quot;#b3b3b3&quot;&gt;will add more projects&lt;/font&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;spacingTop=0;spacing=12;verticalAlign=top;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+                    <mxGeometry x="3521.25" y="350" width="237.5" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="131" target="130">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" value="Yes" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="3600" y="200" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="No" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="3300" y="200" width="80" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

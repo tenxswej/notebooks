@@ -1,0 +1,256 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "<div align=\"center\"><h1>Javascript interview questions<h1></div>\r\n\r\n\r\nJavascript interview questions  တွေကိုစုစည်းပေးထားတာဖြစ်ပါတယ်။ \r\n\r\nresources\r\n\r\n    - linked in assessments\r\n    - own idea"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# array length ဘယ်လောက်ဖြစ်မလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const array = [1,2,3,4]\r\n\r\narray[4] = 5\r\narray[100] = 10\r\n\r\nconsole.log(array.length) // ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "---"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# အောက်က code က console မှာဘာပေါ်မလဲ? "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const element = document.querySelectorAll('#element');\r\nlet a = 0\r\nelement.addEventListener(\"click\", () => {\r\n    a++\r\n    console.log(`clicked : ${a > 1 ? 'times' : 'time'}`) // ?\r\n} )"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "---"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console မှာ \"food\" လို့ပေါ်လာဖို့ code ဘယ်လိုရေးရမလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class Person {\r\n  static belly = [];\r\n  eat() {\r\n    Person.belly.push('food');\r\n  }\r\n}\r\nlet a = new Person();\r\na.eat();\r\n\r\n// your code"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "---"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console မှာဘယ်လိုပေါ်မလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "let Food = function () {};\r\nFood.prototype.food = 'sushi';\r\nFood.prototype.food = 'ramen';\r\n\r\nlet FavoriteFood = function () {};\r\nFavoriteFood.prototype = new Food();\r\nFavoriteFood.prototype.food ||= null;\r\n\r\nlet my = new FavoriteFood();\r\nconsole.log(my.food); // ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "---"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# ပထမ function နဲ့ ဒုတိယ function တို့က **Browser** console မှာ ဘာတွေပေါ်မလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "'use strict';\r\nfunction sayHello() {  \r\n  console.log(this);\r\n}\r\n\r\nfunction sayHi(){\r\n  this.greet = 'hi';\r\n  console.log(this);\r\n  \r\n}\r\n\r\nsayHello();\r\nnew sayHi()"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "---"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console မှာ Banana ပေါ်အောင် ဘယ်လိုလုပ်ရမလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "class A {\r\n    get B() {\r\n      return \"banana\";\r\n    }\r\n  }\r\n  var x = new A();\r\n  \r\n  // \"banana\""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "---"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console မှာဘယ်လိုပေါ်မလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log(sum(1,2,3,4)) // ? \r\nconsole.log(multiply(1,2,3,4)) // ?\r\n\r\nfunction sum(...numbers){\r\n    let total = 1\r\n    for (const num of numbers) {\r\n        total += num\r\n    }\r\n\r\n    return total\r\n}\r\n\r\nconst multiply =  function(...numbers){\r\n    let total = 0\r\n    for (const num of numbers) {\r\n        total *= num\r\n    }\r\n\r\n    return total\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "---"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console မှာဘယ်လိုပေါ်မလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "var a = \"apple\";\r\nvar fn1 = function () {\r\n  console.log(a);\r\n    \r\n};\r\n\r\nvar fn2 = function () {\r\n  a = \"avocado\";\r\n  fn1();\r\n};\r\n\r\nfn2();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console မှာဘယ်လိုပေါ်မလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "var start = 1;\r\nvar end = 10\r\nfunction setEnd() {\r\n  end = 1;\r\n}\r\n\r\nconsole.log(end)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console မှာဘယ်လိုပေါ်မလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function greet() {\r\n  console.log(word);\r\n  var word = \"hello 👋\";\r\n}\r\ngreet();"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# အောက်က code မှာဘာမှားနေလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function person({person : {name}}) {\r\n    console.log(\"hello\",name);\r\n}\r\n\r\nperson({person : {name : \"U Kyaw\", age : 88}, pet : {name : \"jackie\", age : 5}});"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "order ဆိုတဲ့ function တစ်ခုရှိမယ်၊ သူ့ရဲ့ parameter ထဲမှာ \r\n\r\n- \"food\" \r\n- \"drink\"\r\n လို့ထည့်ရင် အောက်က အတိုင်း မှာ ပေါ်ရမယ်။\r\n\r\n```js\r\n    const order1 = menu(\"food\")\r\n    console.log(order) // ['ramen', 'sushi', 'takoyaki']\r\n\r\n    const order2 = menu(\"drink\")\r\n    console.log(order) // ['coke', 'pepsi', 'redbull']\r\n\r\n    \r\n\r\n```\r\n\r\n တခြားဟာတွေထည့်ရင်တော့ အောက်က အတိုင်း မှာ ပေါ်ရမယ်။\r\n```js\r\n    const order3 = menu(\"fish\")\r\n    console.log(order3) // not available\r\n\r\n    const order4 = menu(\"meat\")\r\n    console.log(order4) // not available\r\n```\r\n\r\n\r\n**if statement ၊ ternary operator တွေမသုံးရပါ**၊ "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "// your code"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console မှာဘယ်လိုပေါ်မလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "console.log('First');\r\nsetTimeout(() => {\r\n  console.log('Third');\r\n}, 0);\r\nconsole.log('Second');"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# console မှာဘယ်လိုပေါ်မလဲ?"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const obj = {\r\n    a: 1,\r\n    b: 2,\r\n    c: 3,\r\n  };\r\n  \r\n  const obj2 = {\r\n    ...obj,\r\n    a: 0,\r\n  };\r\n  \r\n  console.log(obj2.a, obj2.b); // ?"
+            ],
+            "outputs": []
+        }
+    ]
+}

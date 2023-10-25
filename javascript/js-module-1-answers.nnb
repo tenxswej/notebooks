@@ -10,6 +10,20 @@
         {
             "language": "markdown",
             "source": [
+                "# Restaurant order"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function order(order) {\r\n    const menu = {food : ['ramen', 'sushi', 'takoyaki'], drink : ['coke', 'pepsi', 'redbull']}\r\n\r\n    let serve = menu[order];\r\n\r\n    let status = \"not available\";\r\n    \r\n    status ||= serve // can use logical assignment operator\r\n\r\n    return status;\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
                 "# Maximum & Minimum number in an array"
             ],
             "outputs": []

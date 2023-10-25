@@ -1,0 +1,18 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "<div align=\"center\"><h1>Asynchronous Javascript<h1></div>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# curriculum\r\n-  Asynchronous natures\r\n-  non-blocking vs async\r\n-  Promises\r\n-  thenable callbacks\r\n-  using async await\r\n-  error handling\r\n-  asynchronous race, parallel, sequence\r\n-  async iterations\r\n-  Request object\r\n-  Responses & custom response"
+            ],
+            "outputs": []
+        }
+    ]
+}

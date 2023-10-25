@@ -1,0 +1,114 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "<div align=\"center\"><h1>Javascript functional Programming<h1></div>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# curriculum\r\n\r\n- Programming paradigms\r\n\r\n- Imperative vs declarative\r\n\r\n- Pure functions\r\n\r\n- Currying\r\n\r\n- Closure\r\n\r\n- Memorization\r\n\r\n- Encapsulation\r\n\r\n- Recursions\r\n\r\n- Prototypal inheritance\r\n\r\n- this keyword\r\n\r\n- scopes\r\n\r\n- constructors\r\n\r\n- bind, apply, call"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Programming paradigms\r\n\r\n## အရိုးရှင်းဆုံး explanation\r\n\r\nProgramming paradigms ဆိုတာ ဘာမှမဟုတ်ပါဘူး။ Code ရေးတဲ့ style (ပုံစံ) ကိုပြောတာပါ၊ ဒါပါပဲ။\r\n\r\nprogramming style = Programming paradigms\r\n\r\n## အသးစိတ်\r\n\r\njavascript က multi paradigms programming language ဖြစ်ပါတယ်။ \r\n\r\nဆိုလိုတာက flexible ဖြစ်တယ်၊ programming style အမျိုးမျိုးနဲ့ ရေးလို့ရတယ်။\r\n\r\nprogramming style တွေကရောဘာတွေလဲ..? ဘယ်လောက်များများရှိလဲ...? \r\n\r\nProgramming paradigms တွေ ဘယ်လောက်ရှိရှိ Top level အနေနဲ့ အုပ်စု ၂ ခုခွဲလို့ရပါတယ်။\r\n\r\n\r\n1) **imperative**\r\n\r\n2) **declarative**\r\n\r\n---\r\n\r\n# imperative vs declarative plain explanation\r\n\r\nသင့်မိတ်ဆွေ တစ်ယောက်က သင့်အိမ်လာလည်မယ် ဒါပေမယ့် သူက အိမ်လိပ်စာမသိဘူး ဆိုပါစို့၊ \r\n\r\n\r\nအဲဒီတော့ အဲဒီ မိတ်ဆွေကို..\r\n\r\n- **imperative** အရဆိုရင်\r\n\r\n    ဘယ်အရပ်မျက်နှာ ကို ဘယ်လောက် ဝေးဝေးလျှောက်ပါ။ ဘာကိုတွေ့ရင် ညာဘက်ချိုးပါ။ လမ်းဆုံရောက်ရင် ဘယ်ဘက်ချိုးပါ\r\n\r\n    အစရှိသဖြင့် တစ်ဆင့်စီ ညွှန်ကြားနေမယ်ဆိုရင် ဒါဟာ imperative paradigm နဲ့ တူတယ်။ \r\n    \r\n    programming term အရပြောရရင် \"procedural\" တွေကို ဦးစားပေးတဲ့ paradigm ကိုဆိုလိုပါတယ်။\r\n\r\n- **declarative** အရဆိုရင်\r\n\r\n    အိမ်လိပ်စာပဲပေးလိုက်ပြီး ဘယ်လမ်းကသွားတာ ဘယ်လိုသွားတာကို သူ့ကိုပဲဆုံးဖြတ်စေတာတာမျိုးပါ။ \r\n    \r\n    programming term အရပြောရရင် \"logic\", \"concepts\" တွေကို ဦးစားပေးတဲ့ paradigm ကိုဆိုလိုပါတယ်။\r\n\r\n\r\nParadigm တစ်ခုစီမှာ အားသာချက်အားနည်းချက်တွေကိုယ်စီရှိပြီး မတူညီတဲ့ လုပ်ဆောင်ချက်တွေကိုလုပ်ဆောင်ကြပါတယ်။"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Currying\r\n\r\njavascript မှာ function တွေကို **first class citizen** တွေအဖြစ်သတ်မှတ်ပါတယ်။\r\n\r\nအဓိပ္ပာယ်က \r\n\r\n1) function တစ်ခုကို နောက်ထပ် function တစ်ခုကနေ  return ပြန်ပေးလို့ရတယ်။ အဲဒီလိုဆက်၍ ဆက်၍ နောက် function တစ်ခု, နောက် function တစ်ခု return တွေပြန်သွားလို့ရတယ်။\r\n\r\n2) function တစ်ခုရဲ့ parameter ထဲမှာ ပုံမှန် variable တွေ,object တွေကို argument တွေအဖြစ်ထည့်သလိုမျိုးပဲ, နောက်ထပ် function တစ်ခုကိုလဲ အဲဒီလိုလာထည့်သုံးလို့ရတယ်။\r\n\r\n\r\ncurrying ဆိုတဲ့ technique ကတော့ ဒီ javascript feature ကိုအသုံးချပြီးတော့\r\n\r\n- multiple argument into single argument သုံးလို့ရတဲ့ dynamic function တစ်ခုဖြစ်အောင် အသုံးချတယ်။\r\n\r\n    အဲလို အသုံးချတော့ ဘာတွေပိုကောင်းလဲ?\r\n    \r\n    - reusability ဖြစ်တယ်\r\n\r\n    - utility functions တွေအဖြစ်လဲသုံးတယ်\r\n\r\n    - Partial function execution လုပ်လို့ရတယ်\r\n\r\n    "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## reusable ဖြစ်တယ် "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const calculate = (number1) => {\r\n    return (number2) => {\r\n       return number1 + number2;\r\n    };\r\n };\r\n \r\n \r\n const addToFive = calculate(5);\r\n\r\n const addSix = addToFive(6);\r\n const addSeven = addToFive(7);\r\n\r\n \r\n console.log(addSix); // 11\r\n console.log(addSeven); // 12 "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# partial function execution \r\n\r\nဒီ ဥပမာလေးကတော့ real world development မှာ အမှန်တကယ်အသုံးဝင်ပါတယ်၊\r\n\r\npartial function execution ဆိုတာ run ပြီးသား function တစ်ခုကို ထပ်ခါထပ်ခါ run စရာမလိုပဲ လိုတဲ့ အပိုင်းလေးကိုပဲ run စေတာပါ။\r\n\r\nပထမဆုံး movie data တွေကို api ကနေသွားခေါ်လိုက်တယ်ဆိုပါစို့၊ ရလာတဲ့ movie data တွေကို user ကနေ သူရှာချင်တဲ့ movie အမျိုးအစားတွေကို ရှာလိုက်တယ်။\r\n\r\nအဲလိုရှာပြီးသွားတဲ့ အချိန်မှာ user က rating အလိုက် ကြီးစဥ်ငယ်လိုက်၊ ငယ်စဥ်ကြီးလိုက် toggle လုပ်လို့ရအောင် function တစ်ခုရှိထားမယ်ဆိုရင် \r\n\r\nအပြင်မှာ သွားပြီးသပ်သပ်ရေးမယ်ဆိုရင်လဲ ရတယ်၊ ဒါပေမယ့် အဲဒါလေးတစ်ခုထဲနဲ့ တစ်ခြား function အသစ်ကြီးတစ်ခုလိုက်ဖန်တီးမယ်ဆိုရင် မလိုပဲလုပ်သလိုဖြစ်မယ်။ \r\n\r\nmaintainability အတွက်ဆိုရင်လဲ အကယ်၍ ဒီ function ကိုတခြား js modules (file) တွေမှာပါသုံးမယ်ဆိုရင် ို့\r\n\r\nသူနဲ့တွဲသုံးမယ့် sorting function ကြီးကိုလိုက်ပြီး export, import တွေလိုက်လုပ်နေရင် \r\n\r\nDRY (Do Not Repeat) ဆိုတဲ့ အတိုင်း code တစ်ခုကိုမလိုပဲ ခဏခဏရေးနေရတော့ အဆင်မပြေပါဘူး။\r\n\r\nဆိုတော့... အဲဒီ function ကြီးထဲမှာပဲ sorting function တစ်ခုကိုလာထားရင်လဲ filter ဆိုတဲ့ operation ကြီးက မလိုပဲ ထပ်ခါထပ်ခါ run နေရရင်လဲ\r\n\r\nပိုပြီးတော့ optimization ကိုဆိုးရွားစွာ ထိခိုက်စေတယ့်အတွက်၊ ပိုလို့ ရှောင်ရှားသင့်ပါတယ်။\r\n\r\nအကောင်းဆုံးနည်းလမ်းကတော့ function currying technique ကိုအသုံးပြုဖို့ပါ။\r\n\r\nuser ကသူလိုချင်တဲ့ movie တွေကို filter လုပ်ပြီးပြီ၊ sort လုပ်ဖို့အတွက်ဆိုရင် function နောက်တစ်ခုကြီးနဲ့ run စရာမလိုတော့ပဲ \r\n\r\ncurrying ကိုအသုံးပြုပြီး sorting လုပ်ဖို့ကို new function တစ်ခုပြန်ထုတ်ပေးလိုက်မယ်။\r\n\r\nအဲဒီ new function ကလဲ parent function နဲ့တွဲလျက်ရှိနေတော့ maintain လုပ်ရတာ၊ ပြုလွယ် ပြောင်းလွယ် ဖြစ်လို့ ဒီလို case မျိုးမှာ အဆင်ပြေစေပါတယ်။"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const movies = [\r\n    {\r\n        name : \"SpiderMan: Homecoming\",\r\n        genre : [\"Marvel\",\"Super hero\",\"Action\"],\r\n        rating : 75,\r\n    },\r\n    {\r\n        name : \"Tall grass\",\r\n        genre : [\"Mystery\",\"Thriller\", \"Sci-fi\"],\r\n        rating : 98\r\n    },\r\n    {\r\n        name : \"Fracture\",\r\n        genre : [\"Mystery\",\"Thriller\"],\r\n        rating : 100\r\n    },\r\n    {\r\n        name : \"Avenger: Infinity war\",\r\n        genre : [\"Marvel\",\"Super hero\",\"Action\"],\r\n        rating : 80\r\n    },\r\n    {\r\n        name : \"DC: Dark knight\",\r\n        genre : [\"DC\",\"Super hero\",\"Action\",\"Crime\"],\r\n        rating : 99\r\n    },\r\n    {\r\n        name : \"DC: The Joker\",\r\n        genre : [\"DC\",\"Super hero\",\"Action\",\"Crime\"],\r\n        rating : 85\r\n    },\r\n    {\r\n        name : \"Interstellar\",\r\n        genre : [\"Space\",\"Thriller\", \"Adventure\"],\r\n        rating : 95\r\n    }\r\n        \r\n]\r\n\r\nconst filterMovies = (keyword) => {\r\n\r\n    const result = movies.filter(({genre}) => genre.includes(keyword))\r\n\r\n    if(result.length < 1) return null\r\n\r\n    return function(order){\r\n        switch(order){\r\n            case \"ascending\":\r\n                return result.sort((a,b) => a.rating - b.rating);\r\n            case \"descending\":\r\n                return result.sort((a,b) => b.rating - a.rating)\r\n            default:\r\n                return null\r\n        }\r\n    }\r\n}\r\n\r\nconst filter = filterMovies(\"Thriller\")\r\n\r\nconst descending = filter(\"descending\")\r\n\r\n// Array.sort mutate original array, don't execute in parallet\r\n// const ascending = filter(\"ascending\")\r\n// console.log(ascending)\r\n\r\nconsole.log(descending)"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "### Multiple arguments into single argument each time calling"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const calculateParameter = (width,height, breadth) => {\r\n    return width * height * breadth\r\n };\r\n \r\nconsole.log(calculateParameter(5,6,7)); // 210"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const calculateParameter = (width) => {\r\n   return (height) => {\r\n      return (breadth) => {\r\n         return width * height * breadth;\r\n      };\r\n   };\r\n};\r\n\r\nconsole.log(calculateParameter(5)(6)(7)); // 210\r\nconsole.log(calculateParameter(5)(6)(8)); // 240\r\nconsole.log(calculateParameter(5)(6)(9)); // 270"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "array method ၂ ခု ဖြစ်တဲ့ every, some ကို သုံးဖူးကြမယ်ထင်ပါတယ်၊ ဒီ ဥပမာမှာ every, some ဆိုတဲ့ function ၂ ထဲမှာ, ပထမ parameter မှာ ပုံမှန် array တစ်ခုကို လက်ခံပြီး, ဒုတိယမှာ parameter function တစ်ခု လက်ခံတယ်။ အဲဒီ function ရဲ့ return value ကိုကြည့်ပြီးတော့, ပထမ function ကနေလဲ return value ပြန်ပေးတယ်။"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function some(array, fn) {\r\n    for (let index = 0; index < array.length; index++) {\r\n       if (fn(array[index])) return true;\r\n    }\r\n \r\n    return false;\r\n }\r\n \r\n function every(array, fn) {\r\n    for (let index = 0; index < array.length; index++) {\r\n       if (fn(array[index])) return false;\r\n    }\r\n \r\n    return true;\r\n }\r\n \r\n const ar = [3, 4, 5, 6, 7];\r\n \r\n const callbackFunction = num => num > 5 ? true : false;\r\n \r\n console.log(every(ar, callbackFunction)); // false\r\n console.log(some(ar, callbackFunction)); // true "
+            ],
+            "outputs": []
+        }
+    ]
+}

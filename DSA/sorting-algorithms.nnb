@@ -1,0 +1,116 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "<div align=\"center\"><h1>Data structures & Algorithms | Sorting algorithms<h1></div>"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Resources\r\n\r\n- [BigO visualizer](https://rithmschool.github.io/function-timer-demo/)\r\n- [Visual Algo](https://visualgo.net/en/sorting)\r\n- [Big O Cheat Sheet](https://www.bigocheatsheet.com/)\r\n\r\n# References\r\n- Udemy course\r\n- own idea\r\n\r\n# curriculum\r\n\r\n- Bubble sort\r\n- selection sort\r\n- quick\r\n- insertion sort\r\n- merge sort\r\n- radix sort"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Bubble sort\r\n\r\n## Example Demonstration\r\n\r\n![bubble-sort](assets/bubbleSort.gif)\r\n\r\n### prerequisites\r\n - variable swap လုပ်တဲ့ operation ကို နားလည်ထားဖို့လိုပါတယ်။\r\n\r\n### pseudo code\r\n\r\n* loop ၂ ခုရှိမယ်။\r\n* \"i\" ဆိုတာလေးက array ရဲ့ \"အဆုံး\" ကနေ \"ရှေ့\"ကိုတိုးလာမယ်။\r\n* \"j\" ဆိုတာလေးက array ရဲ့ \"အစ\" ကနေ \"နောက်\" ကိုတိုးသွားမယ်။\r\n* \"j\" လေးကို \"i\" \r\n* ar[i] > ar[j+1] ဖြစ်ရင်  swap မယ်\r\n\r\n### Time complexity\r\n\r\n> O(n^2)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function bubble(ar) {\r\n    for (let i = ar.length; i > 0; i--) {\r\n      for (let j = 0; j < i - 1; j++) {\r\n        if (ar[j] > ar[j + 1]) {\r\n          [ar[j], ar[j + 1]] = [ar[j + 1], ar[j]];\r\n        }\r\n      }\r\n    }\r\n\r\n    return ar\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "```js\r\nconst example = [3,16,1,7]\r\n```\r\n\r\ni = 4 \r\n\r\n 4 ဆိုတာ array ရဲ့ length, i ကို \"0\" ရောက်တဲ့အထိ လျော့လာမယ်။\r\n\r\nj = 0\r\n\r\n j ကို i ရဲ့‌ရှေ့ (4-1) ကိုရောက်တဲ့အထိ တိုးလာမယ်\r\n\r\nj ရယ် သူ့ရှေ့က တစ်ခုရယ်နဲ့ကို အမြဲနှိုင်းယှဥ်ပြီးတော့, j က j + 1 တန်ဖိုးထက် **ကြီးရင်** **ရှေ့နောက် နေရာချိန်းမယ်**\r\n\r\n## **1st loop**\r\n\r\ni = 4, j = 0\r\n\r\n### 1st inner loop\r\n\r\n\r\ni = 4, j = 0, j < i - 1 -> true, loop goes on\r\n\r\n```txt\r\n[3, 16, 1, 7]\r\n |   |\r\n J  J+1\r\n```\r\n\r\n```js\r\n ar[j] = 3\r\n ar[j+1] = 16\r\n ar[j] > ar[j+1] // 3 > 16 -> false\r\n```\r\nမ swap ဘူး၊ \r\n\r\n```txt\r\n[3, 16, 1, 7]\r\n```\r\n\r\nj ကို ၁ တိုး\r\n\r\n### 2nd inner loop\r\n\r\ni = 5, j = 1, j < i - 1 -> true, loop goes on\r\n\r\n```txt\r\n[3, 16, 1, 7]\r\n     |  |\r\n     j  J+1\r\n```\r\n\r\n    \r\n```js\r\n ar[j] = 16\r\n ar[j+1] = 1\r\n\r\nar[j] > ar[j+1] // 16 > 1 -> true\r\n```\r\nswap မယ်၊\r\n\r\n```txt\r\n[3, 1, 16, 7]\r\n```\r\n\r\n\r\nj ကို ၁ တိုး\r\n\r\n\r\n### 3rd inner loop\r\n\r\ni = 5, j = 2, j < i - 1 -> true, loop goes on\r\n\r\n```txt\r\n[3, 1, 16, 7]\r\n       |   |\r\n       J  J+1\r\n```\r\n\r\n```js\r\n ar[j] = 16\r\n ar[j+1] = 7\r\n\r\nar[j] > ar[j+1] // 16 > 7 -> true\r\n```\r\nswap မယ်၊\r\n\r\n```txt\r\n[3, 1, 7, 16]\r\n```\r\n\r\nj ကို ၁ တိုး\r\n\r\n### 5th inner loop\r\n\r\ni = 3, j = 3, j < i - 1 -> false, loop stopped\r\n\r\n---\r\n\r\n## 2nd loop\r\n\r\ni = 3, j = 0\r\n\r\n### 1st inner loop\r\n\r\n\r\ni = 3, j = 0, j < i - 1 -> true, loop goes on\r\n\r\n```txt\r\n[3, 1, 7, 16]\r\n |  |\r\n J  J+1\r\n```\r\n\r\n\r\n```js\r\n ar[j] = 3\r\n ar[j+1] = 1\r\n ar[j] > ar[j+1] // 3 > 1 -> true\r\n```\r\nswap မယ်၊ \r\n\r\n```txt\r\n[1, 3, 7, 16]\r\n```\r\n\r\nj ကို ၁ တိုး\r\n\r\n### 2nd inner loop\r\n\r\n\r\ni = 3, j = 1, j < i - 1 -> true, loop goes on\r\n\r\n```txt\r\n[1, 3, 7, 16]\r\n    |  |\r\n    J  J+1\r\n```\r\n\r\n```js\r\n ar[j] = 3\r\n ar[j+1] = 7\r\n ar[j] > ar[j+1] // 3 > 7 -> false\r\n```\r\nမ swap ဘူး၊ \r\n\r\n```txt\r\n[1, 3, 7, 16]\r\n```\r\n\r\nj ကို ၁ တိုး\r\n\r\n\r\n### 3rd inner loop\r\n\r\n\r\ni = 3, j = 2, j < i - 1 -> true, loop goes on\r\n\r\n```txt\r\n[1, 3, 7, 16]\r\n       |   |\r\n       J  J+1\r\n```\r\n\r\n\r\n```js\r\n ar[j] = 3\r\n ar[j+1] = 7\r\n ar[j] > ar[j+1] // 3 > 7 -> false\r\n```\r\nမ swap ဘူး၊ \r\n\r\n```txt\r\n[1, 3, 7, 16]\r\n```\r\n\r\n\r\nj ကို ၁ တိုး\r\n\r\n### 3rd inner loop\r\n\r\ni = 3, j = 0, j < i - 1 -> false, loop stopped\r\n\r\n---\r\n\r\n## 3rd loop\r\n\r\ni = 2, j = 0\r\n\r\n### 1st inner loop\r\n\r\n\r\ni = 2, j = 0, j < i - 1 -> true, loop goes on\r\n\r\n```txt\r\n[1, 3, 7, 16]\r\n |  |\r\n J  J+1\r\n```\r\n\r\n\r\n```js\r\n ar[j] = 1\r\n ar[j+1] = 3\r\n ar[j] > ar[j+1] // 1 > 3 -> false\r\n```\r\nမ swap ဘူး\r\n\r\n```txt\r\n[1, 3, 7, 16]\r\n```\r\n\r\nj ကို ၁ တိုး\r\n\r\n\r\n### 2nd inner loop\r\n\r\n\r\ni = 2, j = 1, j < i - 1 -> true, loop goes on\r\n\r\n```txt\r\n[1, 3, 7, 16]\r\n    |  |\r\n    J  J+1\r\n``` \r\n\r\n```js\r\n ar[j] = 3\r\n ar[j+1] = 7\r\n ar[j] > ar[j+1] // 3 > 7 -> false\r\n```\r\nမ swap ဘူး\r\n\r\n```txt\r\n[1, 3, 7, 16]\r\n```\r\n\r\nj ကို ၁ တိုး\r\n\r\n\r\n### 3rd inner loop\r\n\r\ni = 2, j = 2, j < i - 1 -> true, loop stopped\r\n\r\n---\r\n\r\n## 3rd loop\r\n\r\ni = 1, j = 0\r\n\r\n### 1st inner loop\r\n\r\n\r\ni = 1, j = 0, j < i - 1 -> true, loop goes on\r\n\r\n```txt\r\n[3, 1, 7, 16]\r\n |  |\r\n J  J+1\r\n```\r\n\r\n```js\r\n ar[j] = 3\r\n ar[j+1] = 1\r\n ar[j] > ar[j+1] // 3 > 1 -> true\r\n```\r\nswap မယ်၊ \r\n\r\n```txt\r\n[1, 3, 7, 16]\r\n```\r\n\r\n\r\nj ကို ၁ တိုး\r\n\r\n### 2nd inner loop\r\ni = 1, j = 1, j < i - 1 -> true, loop stopped\r\n\r\n---\r\n\r\n\r\n## 3rd loop\r\n\r\ni = 0, j = 0\r\n\r\n### 1st inner loop\r\n\r\ni = 0, j = 0, j < i - 1 -> true, loop stopped\r\n\r\n# final result\r\n\r\n[1, 3, 7, 16]"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "----"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Selection sort\r\n\r\n![Selection-sort](assets/selectionSort.gif)\r\n\r\n* a nested loop **i** and ***j**\r\n * store the **first smallest element** in first loop\r\n * compare the current element to the **next element**\r\n * if current element is smaller leave it\r\n * if the **next element** smaller, reassign the **first smallest element** to that \"next element\"\r\n * and then reassign the current element to the **smallest element** in the first loop\r\n \r\neq : [3,1,5,8,2]\r\n  - in first loop we start index of 0 which is **3**\r\n  - and have variable which stores a temp smallest value which is index 0 by default\r\n  - in the second loop we check if the **the current value** is smaller than the **next value** which is right to it\r\n  - if the **next value** is smaller than the **current value**,\r\n  - we reassign the **first smallest value** to the **next value**\r\n  - and iterate it over the entire array\r\n  - if the second array completes\r\n  - **we swap** the **current value** with the **smallest element**\r\n  - and iterate it over again with the start of next element"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function selectionSort(ar) {\r\n  for (let i = 0; i < ar.length - 1; i++) {\r\n    let smaller = i;\r\n    for (let j = i; j < ar.length - 1; j++) {\r\n      if (ar[j] < ar[smaller]) {\r\n        smaller = j;\r\n      }\r\n    }\r\n    [ar[i], ar[smaller]] = [ar[smaller], ar[i]];\r\n  }\r\n\r\n  return ar;\r\n}"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Insertion sort\r\n\r\n![Insertion-sort](assets/insertionSort.gif)\r\n\r\n* a little bit similar to **selection sort**\r\n * but the only difference is that\r\n * it does not keep iterating once it found the **next smaller value** than the **current**\r\n * it swaps values immediately"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function insertion(ar) {\r\n    for (var i = 1; i < ar.length; i++) {\r\n      let current = ar[i];\r\n      for (var j = i - 1; j >= 0 && ar[j] > current; j--) {\r\n        ar[j + 1] = ar[j];\r\n      }\r\n      ar[j + 1] = current;\r\n    }\r\n  \r\n    return ar;\r\n  }"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Merge sort\r\n\r\n![merge-srt](assets/mergeSort.gif)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function merge(ar1, ar2) {\r\n    var i = 0;\r\n    var j = 0;\r\n    let result = [];\r\n    while (i < ar1.length && j < ar2.length) {\r\n      if (ar1[i] <= ar2[j]) {\r\n        result.push(ar1[i]);\r\n        i++;\r\n      } else {\r\n        result.push(ar2[j]);\r\n        j++;\r\n      }\r\n    }\r\n  \r\n    while (j < ar2.length) {\r\n      result.push(ar2[j]);\r\n      j++;\r\n    }\r\n  \r\n    while (i < ar1.length) {\r\n      result.push(ar1[i]);\r\n      i++;\r\n    }\r\n  \r\n    console.log(\"Merged =>\", result);\r\n    console.log(\"---\");\r\n    return result;\r\n  }\r\n  let count = 0;\r\n  function mergeSort(ar) {\r\n    count = count + 1;\r\n    if (ar.length <= 1) return ar;\r\n    const mid = Math.floor(ar.length / 2); // 4 // 2 // 1\r\n    const left = mergeSort(ar.slice(0, mid));\r\n    const right = mergeSort(ar.slice(mid));\r\n  \r\n    console.log(\"Count =>\", count);\r\n    console.log(\"Left, Right, Mid\", left, right, mid);\r\n  \r\n    return merge(right, left);\r\n  }"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Quick sort\r\n\r\n![quick-sort](assets/quickSort.gif)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function pivot(ar, start = 0, end = ar.length - 1) {\r\n    const pivotNumber = ar[start];\r\n    let pointer = start;\r\n    let i = start + 1;\r\n  \r\n    while (i <= end) {\r\n      if (pivotNumber >= ar[i]) {\r\n        pointer++;\r\n        [ar[i], ar[pointer]] = [ar[pointer], ar[i]];\r\n      }\r\n      i++;\r\n    }\r\n    [ar[start], ar[pointer]] = [ar[pointer], ar[start]];\r\n  \r\n    return pointer;\r\n  }\r\n  \r\n  function quick(ar, left = 0, right = ar.length - 1) {\r\n    if (left < right) {\r\n      let pivotIndex = pivot(ar, left, right);\r\n  \r\n      quick(ar, left, pivotIndex - 1);\r\n      quick(ar, pivotIndex + 1, right);\r\n    }\r\n  \r\n    return ar;\r\n  }"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Radix sort"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function mostDigits(numAr) {\r\n  let largest = 0;\r\n  for (let i = 0; i < numAr.length; i++) {\r\n    if (numAr[i] === 0) return 1;\r\n\r\n    largest = Math.max(largest, Math.floor(Math.log10(Math.abs(numAr[i]))) + 1);\r\n  }\r\n\r\n  return largest;\r\n}\r\n\r\nfunction getNumIndex(num, index) {\r\n  return Math.floor(Math.abs(num) / Math.pow(10, index)) % 10;\r\n}\r\n\r\nfunction radix(ar) {\r\n  const mostDigitsNum = mostDigits(ar);\r\n\r\n  for (let i = 0; i < mostDigitsNum; i++) {\r\n    let bucket = Array.from({ length: 10 }, () => []);\r\n    for (let j = 0; j < ar.length; j++) {\r\n      let index = getNumIndex(ar[j], i);\r\n      bucket[index].push(ar[j]);\r\n    }\r\n    ar = [].concat(...bucket);\r\n  }\r\n\r\n  return ar;\r\n}"
+            ],
+            "outputs": []
+        }
+    ]
+}
