@@ -3,7 +3,7 @@
         {
             "language": "markdown",
             "source": [
-                "<div align=\"center\"><h1>Javascript functional Programming<h1></div>"
+                "<div align=\"center\"><h1>Javascript | functional Programming<h1></div>"
             ],
             "outputs": []
         },
@@ -24,14 +24,84 @@
         {
             "language": "markdown",
             "source": [
-                "# Currying\r\n\r\njavascript မှာ function တွေကို **first class citizen** တွေအဖြစ်သတ်မှတ်ပါတယ်။\r\n\r\nအဓိပ္ပာယ်က \r\n\r\n1) function တစ်ခုကို နောက်ထပ် function တစ်ခုကနေ  return ပြန်ပေးလို့ရတယ်။ အဲဒီလိုဆက်၍ ဆက်၍ နောက် function တစ်ခု, နောက် function တစ်ခု return တွေပြန်သွားလို့ရတယ်။\r\n\r\n2) function တစ်ခုရဲ့ parameter ထဲမှာ ပုံမှန် variable တွေ,object တွေကို argument တွေအဖြစ်ထည့်သလိုမျိုးပဲ, နောက်ထပ် function တစ်ခုကိုလဲ အဲဒီလိုလာထည့်သုံးလို့ရတယ်။\r\n\r\n\r\ncurrying ဆိုတဲ့ technique ကတော့ ဒီ javascript feature ကိုအသုံးချပြီးတော့\r\n\r\n- multiple argument into single argument သုံးလို့ရတဲ့ dynamic function တစ်ခုဖြစ်အောင် အသုံးချတယ်။\r\n\r\n    အဲလို အသုံးချတော့ ဘာတွေပိုကောင်းလဲ?\r\n    \r\n    - reusability ဖြစ်တယ်\r\n\r\n    - utility functions တွေအဖြစ်လဲသုံးတယ်\r\n\r\n    - Partial function execution လုပ်လို့ရတယ်\r\n\r\n    "
+                "---"
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "## reusable ဖြစ်တယ် "
+                "# Imperative programming\r\n\r\n\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Declarative programming"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "---"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "<h1 style=\"text-align:center; color:blue; font-size:80px\">Functional Programming</h1>\r\n\r\n\r\nfunctional programming paradigm ကိုစလေ့လာဖို့ ဆိုရင် အလွယ်ဆုံးအပိုင်းရယ်လို့လဲမရှိသလို conventionally စမှတ်ရယ်လို့လဲသီးသန့် မရှိပါဘူး။ \r\n\r\nဒီအတွက် currying ကနေစလေ့လာလိုက်ကြမယ်။ ဘာလို့ဆိုတော့ အခြေခံ Module 1 မှာထဲကစလို့ ဒီလို currying feature တွေကို သုံးမှန်းမသိ အများကြီးသုံးခဲ့ဖူးလို့ပါ။\r\n\r\ncallback လို့ခေါ်တဲ့ \"passing a function to another function\" ဆိုတဲ့ feature ဆိုတာ functional programming မှာကျင့်သုံးတဲ့ \"Currying\" ရဲ့ technique တစ်ခုဖြစ်ပါတယ်။\r\n\r\nဒါကြောင့် အရမ်းကြီးမစိမ်းတဲ့ technique တစ်ခုဖြစ်လို့ သူကနေစလေ့လာကြရအောင်။"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Currying\r\n\r\n---\r\n\r\nCurrying ဆိုတာကို မပြောခင် javascript မှာ functions တွေဘယ်လိုအလုပ်လုပ်လဲဆိုတာကို သိဖို့လိုပါတယ်။\r\n\r\n\r\n### javascript မှာ function တွေကို **first class object** တွေအဖြစ်သတ်မှတ်ပါတယ်။ \r\n\r\nအဓိပ္ပာယ်က ...\r\n\r\n\r\n- function တစ်ခုကို variable ထဲမှာထည်လို့ရတယ်။ ဒါကို anonymous function expression လို့ သင်ခဲ့ပြီးဖြစ်ပါတယ်။\r\n\r\n- function တစ်ခုရဲ့ parameter ထဲမှာ ပုံမှန် value တွေလိုမျိုး (variable တွေ,object တွေကို) argument တွေအဖြစ်ထည့်သလိုမျိုးပဲ, နောက်ထပ် function တစ်ခုကိုလဲ \r\nအဲဒီလိုလာထည့်သုံးလို့ရတယ်။\r\n\r\n    \r\n    ```js\r\n    function fn(anotherFunction){\r\n        anotherFunction()\r\n    }   \r\n    ```\r\n\r\n- function တစ်ခုကို နောက်ထပ် function တစ်ခုကနေ value အဖြစ် return ပြန်ပေးလို့ရတယ်။ အဲဒီလိုဆက်၍ ဆက်၍လဲ နောက် function တစ်ခု, နောက် function တစ်ခု return \r\nတွေပြန်သွားလို့ရတယ်။\r\n\r\n\r\n    \r\n    ```js\r\n    function fn(){\r\n        return function(a){\r\n            console.log(a)\r\n        }\r\n    }   \r\n\r\n    fn()(\"hello\") // \"hello\"\r\n    ```\r\n    \r\n\r\n- functions တွေကို ပုံမှန် value တွေလိုမျိုး data structure တစ်ခုခုမှာ store လို့ရတယ်။ အဲလို store ပြီးတော့လဲ call လို့ရတယ်။\r\n\r\n    \r\n    ```js\r\n    let array = [\"hello\", 123, function functionInsideAnArray(){ console.log(\"I am inside of an array\")}]   \r\n\r\n    array[2]() // I am inside of an array\r\n    ```\r\n\r\n\r\n\r\n- functions တွေကို ပုံမှန် object တွေကို instantiate လုပ်သလိုမျိုးလဲ လုပ်လို့ရတယ်။\r\n\r\n    \r\n    ```js\r\n    const name = \"Su\"\r\n    let sayHello = new Function('console.log(`Mingalar par ${name} 👋!`)')\r\n    sayHello()\r\n    ```\r\n\r\nအခုဖော်ပြခဲ့တဲ့ အချက်တွေအတိုင်း javascript က function တွေကိုအသုံးပြုလို့ရပါတယ်။ \r\n\r\nဟုတ်ပြီဒါပေမယ့် ဒါတွေက currying နဲ့ ဘယ်လိုပတ်သတ်လဲ..?\r\n\r\n---\r\n\r\nဒီလိုမျိုး javascript ရဲ့ function တွေကို ဆက်ဆံတဲ့ feature ကိုအသုံးချပြီးတော့ currying ဆိုတဲ့ technique က \r\n\r\n- function တစ်ခုကို reusable ဖြစ်အောင် အသုံးချလို့တယ်။\r\n\r\n- composition ပြုလုပ်လို့ရတယ်\r\n\r\n- utility functions တွေအဖြစ်လဲသုံးတယ်\r\n\r\n- Partial function execution လုပ်လို့ရတယ်\r\n\r\nလက်တွေ့ ဥပမာတွေနဲ့ ကြည့်လိုက်ကြရအောင်..."
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# composition\r\n\r\ncomposition ဆိုတာကတော့ ကြီးမားတဲ့ အစိတ်အပိုင်းတွေကို  breakdown လုပ်ပြီး တစ်ခုစီအပိုင်းလိုက် ခွဲခြမ်းပစ်တာကိုဆိုလိုတာပါ။\r\n\r\nဥပမာ။ function တစ်ခုမှာ ရှုပ်ထွေးတဲ့ calculation တွေ, operation တွေပါနေရင်၊ debugging ပြန်လုပ်ဖို့လိုတဲ့ အခါမှာ\r\n\r\ncode block တွေတစ်ခုပြီးတစ်ခု လိုက်ကြည့်နေရမယ့်အစား, သူ့သက်ဆိုင်ရာ သက်ဆိုင်ရာ code block တွေအလိုက် ကြည့်ပြီး debug လုပ်ရရင် ပိုပြီး clean look ဖြစ်လစေတယ်။\r\n\r\nနောက်ပြီး ဥပမာ Team ထဲမှာ developer တစ်ဦးစီကို task တစ်ခုစီ ခွဲပေးလို့ရအောင်လဲ အသုံးပြုလို့ရတယ်။ \r\n\r\ndevloper1 ကတော့ ဘယ်အပိုင်းကိုရေး\r\n\r\ndevloper2 ကတော့ ဘယ်အပိုင်းကိုရေး အစရှိသည်ဖြင့်\r\n\r\nfunction composition မှာတော့ function  တစ်ခုမှာပါတဲ့ အစိတ်အပိုင်း (operation) တစ်ခုစီကို \r\n\r\nသူ့အပိုင်းနဲ့သူ လိုသလို သီးခြား function တွေအဖြစ် ခွဲထုတ်ပြီး ပြီးမှ ပြန်ပေါင်းတဲ့ ပုံစံဖြစ်ပါတယ်။\r\n\r\nဥပမာတွေကိုကြည့်လိုက်ကြရအောင်"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "အောက်က ဥပမာမှာ main ဆိုတဲ့ function ထဲမှာ"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const main = (firstCal, secondCal, thirdCal) => (x) => firstCal(secondCal(thirdCal(x)));\r\n\r\nconst f = (x) => x + 2;\r\nconst s = (x) => x * 2;\r\nconst t = (x) => x / 2;\r\n\r\nconst composeFunctions = main(f, s, t);င်\r\nconsole.log(main(2)); "
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "function composition ကဘယ်လောက် Powerful ဖြစ်လဲဆိုတာကို နောက် example တစ်ခုနဲ့ထပ်ကြည့်လိုက်ရအောင်"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const compose =\r\n   (...functions) =>\r\n   (x) =>\r\n      functions.reduceRight((acc, fn) => fn(acc), x);\r\n\r\nfunction add(x) {\r\n   return function (y) {\r\n      return x + y;\r\n   };\r\n}\r\n\r\nfunction double(x) {\r\n   return x * 2;\r\n}\r\n\r\nfunction double2(x) {\r\n   return x * 2;\r\n}\r\n\r\nfunction double3(x) {\r\n   return x * 2;\r\n}\r\n\r\nconst addAndDoubleIfEven = compose(double, double2, double3, add(1));\r\n\r\nconsole.log(addAndDoubleIfEven(1)); // 1 + 1 = 2 => 2 * 2 * 2 =  16\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## reusable ဖြစ်အောင်"
             ],
             "outputs": []
         },
@@ -43,9 +113,16 @@
             "outputs": []
         },
         {
+            "language": "markdown",
+            "source": [
+                "# Passing a function as an utility function\r\n\r\narray method ၂ ခု ဖြစ်တဲ့ every, some ကို သုံးဖူးကြမယ်ထင်ပါတယ်၊ ဒီ ဥပမာမှာ every, some ဆိုတဲ့ function ၂ ထဲမှာ, ပထမ parameter မှာ ပုံမှန် array တစ်ခုကို လက်ခံပြီး, ဒုတိယမှာ parameter function တစ်ခု လက်ခံတယ်။ အဲဒီ function ရဲ့ return value ကိုကြည့်ပြီးတော့, ပထမ function ကနေလဲ return value ပြန်ပေးတယ်။"
+            ],
+            "outputs": []
+        },
+        {
             "language": "javascript",
             "source": [
-                ""
+                "function some(array, fn) {\r\n    for (let index = 0; index < array.length; index++) {\r\n       if (fn(array[index])) return true;\r\n    }\r\n \r\n    return false;\r\n }\r\n \r\n function every(array, fn) {\r\n    for (let index = 0; index < array.length; index++) {\r\n       if (fn(array[index])) return false;\r\n    }\r\n \r\n    return true;\r\n }\r\n \r\n const ar = [3, 4, 5, 6, 7];\r\n \r\n const callbackFunction = num => num > 5 ? true : false;\r\n \r\n console.log(every(ar, callbackFunction)); // false\r\n console.log(some(ar, callbackFunction)); // true "
             ],
             "outputs": []
         },
@@ -59,7 +136,7 @@
         {
             "language": "javascript",
             "source": [
-                "const movies = [\r\n    {\r\n        name : \"SpiderMan: Homecoming\",\r\n        genre : [\"Marvel\",\"Super hero\",\"Action\"],\r\n        rating : 75,\r\n    },\r\n    {\r\n        name : \"Tall grass\",\r\n        genre : [\"Mystery\",\"Thriller\", \"Sci-fi\"],\r\n        rating : 98\r\n    },\r\n    {\r\n        name : \"Fracture\",\r\n        genre : [\"Mystery\",\"Thriller\"],\r\n        rating : 100\r\n    },\r\n    {\r\n        name : \"Avenger: Infinity war\",\r\n        genre : [\"Marvel\",\"Super hero\",\"Action\"],\r\n        rating : 80\r\n    },\r\n    {\r\n        name : \"DC: Dark knight\",\r\n        genre : [\"DC\",\"Super hero\",\"Action\",\"Crime\"],\r\n        rating : 99\r\n    },\r\n    {\r\n        name : \"DC: The Joker\",\r\n        genre : [\"DC\",\"Super hero\",\"Action\",\"Crime\"],\r\n        rating : 85\r\n    },\r\n    {\r\n        name : \"Interstellar\",\r\n        genre : [\"Space\",\"Thriller\", \"Adventure\"],\r\n        rating : 95\r\n    }\r\n        \r\n]\r\n\r\nconst filterMovies = (keyword) => {\r\n\r\n    const result = movies.filter(({genre}) => genre.includes(keyword))\r\n\r\n    if(result.length < 1) return null\r\n\r\n    return function(order){\r\n        switch(order){\r\n            case \"ascending\":\r\n                return result.sort((a,b) => a.rating - b.rating);\r\n            case \"descending\":\r\n                return result.sort((a,b) => b.rating - a.rating)\r\n            default:\r\n                return null\r\n        }\r\n    }\r\n}\r\n\r\nconst filter = filterMovies(\"Thriller\")\r\n\r\nconst descending = filter(\"descending\")\r\n\r\n// Array.sort mutate original array, don't execute in parallet\r\n// const ascending = filter(\"ascending\")\r\n// console.log(ascending)\r\n\r\nconsole.log(descending)"
+                "const movies = [\r\n    {\r\n        name : \"SpiderMan: Homecoming\",\r\n        genre : [\"Marvel\",\"Super hero\",\"Action\"],\r\n        rating : 75,\r\n    },\r\n    {\r\n        name : \"Tall grass\",\r\n        genre : [\"Mystery\",\"Thriller\", \"Sci-fi\"],\r\n        rating : 98\r\n    },\r\n    {\r\n        name : \"Fracture\",\r\n        genre : [\"Mystery\",\"Thriller\"],\r\n        rating : 100\r\n    },\r\n    {\r\n        name : \"Avenger: Infinity war\",\r\n        genre : [\"Marvel\",\"Super hero\",\"Action\"],\r\n        rating : 80\r\n    },\r\n    {\r\n        name : \"DC: Dark knight\",\r\n        genre : [\"DC\",\"Super hero\",\"Action\",\"Crime\"],\r\n        rating : 99\r\n    },\r\n    {\r\n        name : \"DC: The Joker\",\r\n        genre : [\"DC\",\"Super hero\",\"Action\",\"Crime\"],\r\n        rating : 85\r\n    },\r\n    {\r\n        name : \"Interstellar\",\r\n        genre : [\"Space\",\"Thriller\", \"Adventure\"],\r\n        rating : 95\r\n    }\r\n        \r\n]\r\n\r\nconst filterMovies = (keyword) => {\r\n\r\n    const result = movies.filter(({genre}) => genre.includes(keyword))\r\n\r\n    if(result.length < 1) return null\r\n\r\n    return function(order){\r\n        switch(order){\r\n            case \"ascending\":\r\n                return result.sort((a,b) => a.rating - b.rating);\r\n            case \"descending\":\r\n                return result.sort((a,b) => b.rating - a.rating)\r\n            default:\r\n                return null\r\n        }\r\n    }\r\n}\r\n\r\nconst filter = filterMovies(\"Thriller\")\r\n\r\nconst descending = filter(\"descending\")\r\n\r\n// Array.sort mutate original array, don't execute in parallel\r\n// const ascending = filter(\"ascending\")\r\n// console.log(ascending)\r\n\r\nconsole.log(descending)"
             ],
             "outputs": [
                 {
@@ -76,37 +153,37 @@
             ]
         },
         {
-            "language": "markdown",
+            "language": "javascript",
             "source": [
-                "### Multiple arguments into single argument each time calling"
+                ""
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "const calculateParameter = (width,height, breadth) => {\r\n    return width * height * breadth\r\n };\r\n \r\nconsole.log(calculateParameter(5,6,7)); // 210"
-            ],
-            "outputs": []
-        },
-        {
-            "language": "javascript",
-            "source": [
-                "const calculateParameter = (width) => {\r\n   return (height) => {\r\n      return (breadth) => {\r\n         return width * height * breadth;\r\n      };\r\n   };\r\n};\r\n\r\nconsole.log(calculateParameter(5)(6)(7)); // 210\r\nconsole.log(calculateParameter(5)(6)(8)); // 240\r\nconsole.log(calculateParameter(5)(6)(9)); // 270"
+                ""
             ],
             "outputs": []
         },
         {
             "language": "markdown",
             "source": [
-                "array method ၂ ခု ဖြစ်တဲ့ every, some ကို သုံးဖူးကြမယ်ထင်ပါတယ်၊ ဒီ ဥပမာမှာ every, some ဆိုတဲ့ function ၂ ထဲမှာ, ပထမ parameter မှာ ပုံမှန် array တစ်ခုကို လက်ခံပြီး, ဒုတိယမှာ parameter function တစ်ခု လက်ခံတယ်။ အဲဒီ function ရဲ့ return value ကိုကြည့်ပြီးတော့, ပထမ function ကနေလဲ return value ပြန်ပေးတယ်။"
+                "---"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Closure"
             ],
             "outputs": []
         },
         {
             "language": "javascript",
             "source": [
-                "function some(array, fn) {\r\n    for (let index = 0; index < array.length; index++) {\r\n       if (fn(array[index])) return true;\r\n    }\r\n \r\n    return false;\r\n }\r\n \r\n function every(array, fn) {\r\n    for (let index = 0; index < array.length; index++) {\r\n       if (fn(array[index])) return false;\r\n    }\r\n \r\n    return true;\r\n }\r\n \r\n const ar = [3, 4, 5, 6, 7];\r\n \r\n const callbackFunction = num => num > 5 ? true : false;\r\n \r\n console.log(every(ar, callbackFunction)); // false\r\n console.log(some(ar, callbackFunction)); // true "
+                ""
             ],
             "outputs": []
         }
